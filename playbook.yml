@@ -1,0 +1,6 @@
+---
+- name: Ec2 Config
+  hosts: all
+  user: ubuntu
+  roles:
+    - configure
