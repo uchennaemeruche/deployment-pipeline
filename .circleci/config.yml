@@ -12,7 +12,7 @@ jobs:
               --template-file template.yml \
               --stack-name my-new-stack \
               --parameter-overides file://parameters/server.json
-workflow:
+workflows:
   infrastructure_workflow:
     jobs:
       - create_infrastructure
