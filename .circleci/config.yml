@@ -10,7 +10,7 @@ jobs:
           command: |
             aws cloudformation deploy \
               --template-file template.yml \
-              --stack-name my-new-stack \
+              --stack-name my-stack \
               --parameter-overrides file://parameters/server.json
 workflows:
   infrastructure_workflow:
