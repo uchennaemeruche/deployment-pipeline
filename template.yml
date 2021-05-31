@@ -14,7 +14,7 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       KeyName: udacity
-      ImageId: InstanceImageId
+      ImageId: !Ref InstanceImageId
       InstanceType: !Ref InstanceType
       SecurityGroupIds:
         - !Ref MyInstanceSecurityGroup
@@ -38,4 +38,3 @@ Resources:
           FromPort: -1
           ToPort: -1
           CidrIp: 0.0.0.0/0
-Outputs:
